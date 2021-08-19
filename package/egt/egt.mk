@@ -5,7 +5,7 @@
 ################################################################################
 
 EGT_VERSION = fastboot
-EGT_SITE = https://github.com/MCHP-MPU-Solutions-SHA/egt.git
+EGT_SITE = https://github.com/cybdarren/egt-fastboot.git
 EGT_SITE_METHOD = git
 EGT_GIT_SUBMODULES = YES
 EGT_LICENSE = Apache-2.0
