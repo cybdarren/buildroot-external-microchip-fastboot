@@ -4,8 +4,8 @@
 #
 ################################################################################
 
-EGT_VERSION = 1.1
-EGT_SITE = https://github.com/linux4sam/egt.git
+EGT_VERSION = fastboot
+EGT_SITE = https://github.com/cybdarren/egt-fastboot.git
 EGT_SITE_METHOD = git
 EGT_GIT_SUBMODULES = YES
 EGT_LICENSE = Apache-2.0
