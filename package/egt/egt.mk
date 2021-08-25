@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-EGT_VERSION = on24
+EGT_VERSION = on24-tag1
 EGT_SITE = https://github.com/cybdarren/egt-fastboot.git
 EGT_SITE_METHOD = git
 EGT_GIT_SUBMODULES = YES

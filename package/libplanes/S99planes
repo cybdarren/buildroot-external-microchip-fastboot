@@ -3,10 +3,10 @@
 start()
 {
     echo "Starting Demo..."
-       
+
     while true; do
         cd /usr/bin/
-        egt_motorcycledash 
+        egt_motorcycledash
     done &
 }
 
