@@ -1,0 +1,9 @@
+CONFIG_SAM9X60EK=y
+CONFIG_RAM_256MB=y
+CONFIG_SDCARD=y
+CONFIG_LOAD_LINUX=y
+CONFIG_OVERRIDE_CMDLINE=y
+CONFIG_LINUX_KERNEL_ARG_STRING="console=ttyS0,115200 root=/dev/mmcblk0p2 rw rootwait rootfstype=ext4 atmel.pm_modes=standby,ulp0 video=Unknown-1:800x480-16"
+CONFIG_IMAGE_NAME="zImage"
+CONFIG_DEBUG=y
+CONFIG_THUMB=y
