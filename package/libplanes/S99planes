@@ -3,19 +3,16 @@
 start()
 {
     echo "Starting Demo..."
-
+       
     while true; do
-	cd /usr/share/planes/
-	for f in *.config; do
-	    echo $f
-	    planes -f 1000 -c $f
-	done
+        cd /usr/bin/
+        egt_motorcycledash 
     done &
 }
 
 stop()
 {
-  killall -9 planes
+  killall -9 egt_motorcycledash
 }
 
 
