@@ -80,7 +80,7 @@
 		compatible = "gpio-keys";
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_key_gpio_default>;
-		status = "okay";
+		status = "disabled";
 
 		sw1 {
 			label = "SW1";
@@ -92,7 +92,7 @@
 
 	leds {
 		compatible = "gpio-leds";
-		status = "okay"; /* Conflict with pwm0. */
+		status = "disabled"; /* Conflict with pwm0. */
 
 		red {
 			label = "red";
@@ -117,7 +117,7 @@
 	vref-supply = <&vdd1_3v3>;
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_adc_default &pinctrl_adtrg_default>;
-	status = "okay";
+	status = "disabled";
 };
 
 &can0 {
@@ -129,7 +129,7 @@
 &can1 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_can1_rx_tx>;
-	status = "okay";
+	status = "disabled";
 };
 
 &classd {
@@ -137,7 +137,7 @@
 	pinctrl-0 = <&pinctrl_classd_default>;
 	atmel,pwm-type = "diff";
 	atmel,non-overlap-time = <10>;
-	status = "okay";
+	status = "disabled";
 };
 
 &dbgu {
@@ -149,12 +149,12 @@
 &ebi {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_ebi_addr_nand &pinctrl_ebi_data_0_7>;
-	status = "okay";
+	status = "disabled";
 
 	nand_controller: nand-controller {
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_nand_oe_we &pinctrl_nand_cs &pinctrl_nand_rb>;
-		status = "okay";
+		status = "disabled";
 
 		nand@3 {
 			reg = <0x3 0x0 0x800000>;
@@ -213,7 +213,7 @@
 
 &flx0 {
 	atmel,flexcom-mode = <ATMEL_FLEXCOM_MODE_TWI>;
-	status = "okay";
+	status = "disabled";
 
 	i2c0: i2c@600 {
 		compatible = "microchip,sam9x60-i2c";
@@ -228,14 +228,14 @@
 		i2c-analog-filter;
 		i2c-digital-filter;
 		i2c-digital-filter-width-ns = <35>;
-		status = "okay";
+		status = "disabled";
 
 		eeprom@53 {
 			compatible = "atmel,24c32";
 			reg = <0x53>;
 			pagesize = <16>;
 			size = <128>;
-			status = "okay";
+			status = "disabled";
 		};
 	};
 };
@@ -599,7 +599,7 @@
 &qspi {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_qspi>;
-	status = "okay"; /* Conflict with i2s. */
+	status = "disabled"; /* Conflict with i2s. */
 
 	flash@0 {
 		#address-cells = <1>;
